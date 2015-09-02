@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.buildo.application.processor.ManufacturerFragment">
+
+    <Button
+        android:id="@+id/buttonProcessorAmd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-5.7dp"
+        android:layout_weight=".5"
+        android:text="AMD" />
+
+    <Button
+        android:id="@+id/buttonProcessorIntel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-5.7dp"
+        android:layout_weight=".5"
+        android:text="INTEL" />
+</LinearLayout>
