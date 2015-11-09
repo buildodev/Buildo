@@ -1,0 +1,116 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.buildo.application.intro.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar_actionbar"
+            layout="@layout/toolbar_actionbar" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/toolbar_actionbar"
+            android:background="#FF222222">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayoutProfileImage"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <EditText
+                android:id="@+id/editTextProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextProfileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+
+            <EditText
+                android:id="@+id/editTextProfileAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Set Familiarity"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/radioButtonProfileBasic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".33"
+                    android:text="Basic" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonProfilePro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".33"
+                    android:text="Pro" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonProfileCustom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".33"
+                    android:text="Custom" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttonProfileSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="save"
+                android:text="Save" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

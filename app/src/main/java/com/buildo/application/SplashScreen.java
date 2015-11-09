@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
 
 import com.buildo.application.intro.IntroActivity;
-import com.buildo.application.processor.ProcessorActivity;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -40,7 +39,7 @@ public class SplashScreen extends AppCompatActivity {
                 try {
                     sleep(2 * 1000);
 
-                    startActivity(new Intent(SplashScreen.this, ProcessorActivity.class)); //IntroActivity.class
+                    startActivity(new Intent(SplashScreen.this, IntroActivity.class)); //IntroActivity.class
 
                     finish();
 

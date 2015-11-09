@@ -9,7 +9,19 @@
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_processor">ProcessorActivity</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_graphics">GraphicsActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+    <array name="components">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>RAM</item>
+        <item>Motherboard</item>
+        <item>PSU</item>
+    </array>
+
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_components">Select Components</string>
 </resources>

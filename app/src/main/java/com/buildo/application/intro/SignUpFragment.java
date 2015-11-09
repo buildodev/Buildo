@@ -1,14 +1,15 @@
 package com.buildo.application.intro;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
+import com.buildo.application.ProfileActivity;
 import com.buildo.application.R;
 
 
@@ -36,14 +37,18 @@ public class SignUpFragment extends android.support.v4.app.Fragment {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (editName.getText().toString().length() == 0)
+                /*if (editName.getText().toString().length() == 0)
                     editName.setBackgroundResource(R.drawable.custom_edit_text_error);
                 else if (editEmail.getText().toString().length() == 0)
                     editEmail.setBackgroundResource(R.drawable.custom_edit_text_error);
                 else if (editPassword.getText().toString().length() == 0)
                     editPassword.setBackgroundResource(R.drawable.custom_edit_text_error);
-                else
-                    Toast.makeText(getActivity(), "Registration Successful", Toast.LENGTH_SHORT).show();
+                else {
+                    Toast.makeText(getActivity(), "Registration Successful", Toast.LENGTH_SHORT).show();*/
+                startActivity(new Intent(getActivity(), ProfileActivity.class));
+                getActivity().finish();
+//                }
+
             }
         });
 
