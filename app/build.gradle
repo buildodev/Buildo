@@ -40,4 +40,5 @@ dependencies {
         transitive = true
     }
     compile 'com.github.orhanobut:hawk:1.19'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
 }

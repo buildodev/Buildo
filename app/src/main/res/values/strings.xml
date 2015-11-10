@@ -6,6 +6,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_processor">ProcessorActivity</string>
 
@@ -15,13 +16,20 @@
 
     <array name="components">
         <item>CPU</item>
-        <item>GPU</item>
+        <item>Graphics Card</item>
         <item>RAM</item>
         <item>Motherboard</item>
-        <item>PSU</item>
+        <item>Power Supply Unit</item>
+        <item>Cabinet</item>
     </array>
 
     <string name="done">Done</string>
     <string name="cancel">Cancel</string>
     <string name="select_components">Select Components</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

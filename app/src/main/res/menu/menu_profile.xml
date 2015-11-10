@@ -6,6 +6,6 @@
         android:id="@+id/action_edit"
         android:title="Edit"
         app:showAsAction="always"
-        android:icon="@mipmap/ic_edit"/>
+        android:icon="@android:drawable/ic_menu_edit"/>
 
 </menu>
