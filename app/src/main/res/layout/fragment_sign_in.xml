@@ -75,9 +75,6 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:paddingEnd="15dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
         android:textColor="@color/textColor" />
 
     <EditText
@@ -91,9 +88,6 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:paddingEnd="15dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
         android:textColor="@color/textColor" />
 
     <Button

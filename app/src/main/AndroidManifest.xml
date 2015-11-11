@@ -28,8 +28,9 @@
             android:label="@string/title_activity_profile" />
         <activity
             android:name=".main.MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme" >
+            android:label="@string/title_activity_main" />
+        <activity android:name=".build.RigHomeActivity" />
+        <activity android:name=".build.cpu.ProcessorActivity" >
         </activity>
     </application>
 

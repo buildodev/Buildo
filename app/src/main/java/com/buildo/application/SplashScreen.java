@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
 
+import com.buildo.application.build.RigHomeActivity;
 import com.buildo.application.intro.IntroActivity;
 import com.buildo.application.main.MainActivity;
 
@@ -40,7 +41,7 @@ public class SplashScreen extends AppCompatActivity {
                 try {
                     sleep(2 * 1000);
 
-                    startActivity(new Intent(SplashScreen.this, MainActivity.class)); //IntroActivity.class
+                    startActivity(new Intent(SplashScreen.this, RigHomeActivity.class)); //IntroActivity.class
 
                     finish();
 

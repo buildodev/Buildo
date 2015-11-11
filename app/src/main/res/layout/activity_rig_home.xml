@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_actionbar"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRigHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonRigHomeCPU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Processor"
+                android:onClick="openProcessorActivity"/>
+
+            <Button
+                android:id="@+id/buttonRigHomeGPU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Graphics Card"/>
+
+            <Button
+                android:id="@+id/buttonRigHomeRAM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RAM"/>
+
+            <Button
+                android:id="@+id/buttonRigHomeMobo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Motherboard"/>
+
+            <Button
+                android:id="@+id/buttonRigHomePSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Power Supply"/>
+
+            <Button
+                android:id="@+id/buttonRigHomeCabinet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cabinet"/>
+
+            <Button
+                android:id="@+id/buttonRigHomeCPUCooling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CPU Cooling"/>
+
+            <Button
+                android:id="@+id/buttonRigHomeCabinetCooling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cabinet Cooling"/>
+
+            <Button
+                android:id="@+id/buttonRigHomeAccessories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accessories"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

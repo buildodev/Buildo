@@ -1,5 +1,6 @@
 package com.buildo.application.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,11 +14,14 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.buildo.application.R;
+import com.buildo.application.build.RigHomeActivity;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private FloatingActionsMenu fam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,20 +30,20 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final FloatingActionsMenu fam = (FloatingActionsMenu) findViewById(R.id.fam_main);
+        fam = (FloatingActionsMenu) findViewById(R.id.fam_main);
 
-        FloatingActionButton fab1 = (FloatingActionButton) findViewById(R.id.fab_freshRig);
-        FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fab_existingRig);
+        FloatingActionButton fabFreshRig = (FloatingActionButton) findViewById(R.id.fab_freshRig);
+        FloatingActionButton fabExistingRig = (FloatingActionButton) findViewById(R.id.fab_existingRig);
 
-        fab1.setOnClickListener(new View.OnClickListener() {
+        fabFreshRig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "fresh rig", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, RigHomeActivity.class));
                 fam.collapse();
             }
         });
 
-        fab2.setOnClickListener(new View.OnClickListener() {
+        fabExistingRig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "existing rig", Toast.LENGTH_SHORT).show();
@@ -74,11 +78,12 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
+        if (drawer.isDrawerOpen(GravityCompat.START))
             drawer.closeDrawer(GravityCompat.START);
-        } else {
+        else if (fam.isExpanded())
+            fam.collapse();
+        else
             super.onBackPressed();
-        }
     }
 
     @Override

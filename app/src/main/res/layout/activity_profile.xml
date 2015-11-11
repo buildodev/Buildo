@@ -7,7 +7,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor">
 
         <include
             android:id="@+id/toolbar_actionbar"
@@ -42,26 +43,35 @@
             <EditText
                 android:id="@+id/editTextProfileName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
                 android:hint="Name"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/textColor"/>
 
             <EditText
                 android:id="@+id/editTextProfileEmail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
                 android:layout_marginTop="10dp"
                 android:hint="Email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColor="@color/textColor"/>
 
 
             <EditText
                 android:id="@+id/editTextProfileAge"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edit_text"
+                android:ems="10"
                 android:layout_marginTop="10dp"
                 android:hint="Age"
-                android:inputType="number" />
+                android:inputType="number"
+                android:textColor="@color/textColor"/>
 
             <TextView
                 android:layout_width="match_parent"
