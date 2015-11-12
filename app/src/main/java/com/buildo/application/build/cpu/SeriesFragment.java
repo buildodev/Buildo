@@ -40,7 +40,9 @@ public class SeriesFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                CPUListingFragment fragment = new CPUListingFragment();
+                getFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment, "cpuListingFragment")
+                        .addToBackStack("cpuListing").commit();
             }
         });
 
@@ -50,12 +52,12 @@ public class SeriesFragment extends Fragment {
     private void getDataIntel() {
 
         String names[] = {"i7", "i5", "i3", "pentium 4", "pentium 3"};
-        String descs[] = {"awesome", "good", "OK", "meh!", "seriously?"};
+        String desc[] = {"awesome", "good", "OK", "meh!", "seriously?"};
 
         for (int i = 0; i < names.length; i++) {
             Series series = new Series();
             series.setName(names[i]);
-            series.setDesc(descs[i]);
+            series.setDesc(desc[i]);
             seriesList.add(series);
         }
 

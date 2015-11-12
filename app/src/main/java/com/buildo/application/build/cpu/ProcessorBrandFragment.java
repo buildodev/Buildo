@@ -38,7 +38,8 @@ public class ProcessorBrandFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putString("brand","intel");
                 fragment.setArguments(bundle);
-                getFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment, "brandFragment").addToBackStack("brand").commit();
+                getFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment, "seriesFragment")
+                        .addToBackStack("series").commit();
             }
         });
 
@@ -50,7 +51,8 @@ public class ProcessorBrandFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putString("brand","amd");
                 fragment.setArguments(bundle);
-                getFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment, "brandFragment").addToBackStack("brand").commit();
+                getFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment, "seriesFragment")
+                        .addToBackStack("series").commit();
             }
         });
 
