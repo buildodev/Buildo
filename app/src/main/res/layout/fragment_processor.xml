@@ -1,0 +1,42 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.buildo.application.build.cpu.ProcessorFragment">
+
+    <ImageView
+        android:id="@+id/imageViewProcessorImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Processor Image"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textViewProcessorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewProcessorImage"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="i7 3770k"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonProcessorDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewProcessorName"
+        android:layout_centerHorizontal="true"
+        android:text="Description" />
+
+    <ScrollView
+        android:layout_below="@+id/buttonProcessorDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
+
+</RelativeLayout>

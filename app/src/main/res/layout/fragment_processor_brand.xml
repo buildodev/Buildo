@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.buildo.application.build.cpu.ProcessorBrandFragment">
+    tools:context="com.buildo.application.build.processorListing.ProcessorBrandFragment">
 
     <Button
         android:id="@+id/buttonProcessorBrandIntel"

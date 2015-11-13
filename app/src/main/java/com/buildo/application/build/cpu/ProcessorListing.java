@@ -1,10 +1,10 @@
 package com.buildo.application.build.cpu;
 
-public class CPU {
+public class ProcessorListing {
 
     private String name, desc;
 
-    public CPU() {
+    public ProcessorListing() {
     }
 
     public String getName() {

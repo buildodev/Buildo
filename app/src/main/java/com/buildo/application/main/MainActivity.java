@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.buildo.application.R;
-import com.buildo.application.build.RigHomeActivity;
+import com.buildo.application.RigHomeActivity;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 

@@ -33,16 +33,16 @@ public class SeriesFragment extends Fragment {
             getDataAMD();
 
 
-        ListView listView = (ListView) view.findViewById(R.id.listViewSeriesCPU);
+        ListView listView = (ListView) view.findViewById(R.id.listViewSeriesProcessor);
         SeriesAdapter adapter = new SeriesAdapter(getActivity(), seriesList);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                CPUListingFragment fragment = new CPUListingFragment();
-                getFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment, "cpuListingFragment")
-                        .addToBackStack("cpuListing").commit();
+                ProcessorListingFragment fragment = new ProcessorListingFragment();
+                getFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment, "processorListingFragment")
+                        .addToBackStack("processorListing").commit();
             }
         });
 

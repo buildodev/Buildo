@@ -12,25 +12,25 @@ import com.buildo.application.R;
 
 import java.util.List;
 
-public class CPUListingAdapter extends BaseAdapter {
+public class ProcessorListingAdapter extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
-    private List<CPU> cpuItems;
+    private List<ProcessorListing> processorItems;
 
-    public CPUListingAdapter(Activity activity, List<CPU> cpuItems) {
+    public ProcessorListingAdapter(Activity activity, List<ProcessorListing> processorItems) {
         this.activity = activity;
-        this.cpuItems = cpuItems;
+        this.processorItems = processorItems;
     }
 
     @Override
     public int getCount() {
-        return cpuItems.size();
+        return processorItems.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return cpuItems.get(position);
+        return processorItems.get(position);
     }
 
     @Override
@@ -50,7 +50,7 @@ public class CPUListingAdapter extends BaseAdapter {
         TextView txtName = (TextView) convertView.findViewById(R.id.textViewCPUListingName);
         TextView txtDesc = (TextView) convertView.findViewById(R.id.textViewCPUListingDesc);
 
-        CPU c = cpuItems.get(position);
+        ProcessorListing c = processorItems.get(position);
         txtName.setText(c.getName());
         txtDesc.setText(c.getDesc());
 

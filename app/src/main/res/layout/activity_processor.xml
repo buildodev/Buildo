@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.buildo.application.build.cpu.ProcessorActivity">
+    tools:context="com.buildo.application.build.processorListing.ProcessorActivity">
 
     <include
         android:id="@+id/toolbar_actionbar"

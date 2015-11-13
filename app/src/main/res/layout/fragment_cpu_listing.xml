@@ -2,10 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.buildo.application.build.cpu.CPUListingFragment">
+    tools:context="com.buildo.application.build.processorListing.CPUListingFragment">
 
     <ListView
-        android:id="@+id/listViewListingCPU"
+        android:id="@+id/listViewListingProcessor"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

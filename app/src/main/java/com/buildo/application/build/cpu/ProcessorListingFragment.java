@@ -14,11 +14,11 @@ import com.buildo.application.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CPUListingFragment extends Fragment {
+public class ProcessorListingFragment extends Fragment {
 
-    private List<CPU> cpuList = new ArrayList<>();
+    private List<ProcessorListing> processorList = new ArrayList<>();
 
-    public CPUListingFragment() {
+    public ProcessorListingFragment() {
         // Required empty public constructor
     }
 
@@ -28,8 +28,8 @@ public class CPUListingFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cpu_listing, container, false);
 
-        ListView listView = (ListView) view.findViewById(R.id.listViewListingCPU);
-        CPUListingAdapter adapter = new CPUListingAdapter(getActivity(), getData());
+        ListView listView = (ListView) view.findViewById(R.id.listViewListingProcessor);
+        ProcessorListingAdapter adapter = new ProcessorListingAdapter(getActivity(), getData());
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -41,18 +41,18 @@ public class CPUListingFragment extends Fragment {
         return view;
     }
 
-    public List<CPU> getData() {
+    public List<ProcessorListing> getData() {
 
         String names[] = {"3700k", "4300", "5670", "6960k", "3450"};
         String desc[] = {"3.4 GHz", "2 GHz", "3 GHz", "3.4 GHz", "2.4 GHz"};
 
         for (int i = 0; i < names.length; i++) {
-            CPU cpu = new CPU();
-            cpu.setName(names[i]);
-            cpu.setDesc(desc[i]);
-            cpuList.add(cpu);
+            ProcessorListing processorListing = new ProcessorListing();
+            processorListing.setName(names[i]);
+            processorListing.setDesc(desc[i]);
+            processorList.add(processorListing);
         }
 
-        return cpuList;
+        return processorList;
     }
 }
