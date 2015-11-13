@@ -13,11 +13,11 @@ import com.buildo.application.R;
 
 import java.util.ArrayList;
 
-public class SeriesFragment extends Fragment {
+public class ProcessorSeriesFragment extends Fragment {
 
-    private ArrayList<Series> seriesList = new ArrayList<>();
+    private ArrayList<ProcessorSeries> processorSeriesList = new ArrayList<>();
 
-    public SeriesFragment() {
+    public ProcessorSeriesFragment() {
         // Required empty public constructor
     }
 
@@ -34,7 +34,7 @@ public class SeriesFragment extends Fragment {
 
 
         ListView listView = (ListView) view.findViewById(R.id.listViewSeriesProcessor);
-        SeriesAdapter adapter = new SeriesAdapter(getActivity(), seriesList);
+        ProcessorSeriesAdapter adapter = new ProcessorSeriesAdapter(getActivity(), processorSeriesList);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -55,10 +55,10 @@ public class SeriesFragment extends Fragment {
         String desc[] = {"awesome", "good", "OK", "meh!", "seriously?"};
 
         for (int i = 0; i < names.length; i++) {
-            Series series = new Series();
-            series.setName(names[i]);
-            series.setDesc(desc[i]);
-            seriesList.add(series);
+            ProcessorSeries processorSeries = new ProcessorSeries();
+            processorSeries.setName(names[i]);
+            processorSeries.setDesc(desc[i]);
+            processorSeriesList.add(processorSeries);
         }
 
     }
@@ -69,10 +69,10 @@ public class SeriesFragment extends Fragment {
         String descs[] = {"awesome", "good", "OK", "meh!", "seriously?"};
 
         for (int i = 0; i < names.length; i++) {
-            Series series = new Series();
-            series.setName(names[i]);
-            series.setDesc(descs[i]);
-            seriesList.add(series);
+            ProcessorSeries processorSeries = new ProcessorSeries();
+            processorSeries.setName(names[i]);
+            processorSeries.setDesc(descs[i]);
+            processorSeriesList.add(processorSeries);
         }
 
     }

@@ -12,25 +12,25 @@ import com.buildo.application.R;
 
 import java.util.List;
 
-public class SeriesAdapter extends BaseAdapter{
+public class ProcessorSeriesAdapter extends BaseAdapter{
 
     private Activity activity;
     private LayoutInflater inflater;
-    private List<Series> seriesItems;
+    private List<ProcessorSeries> processorSeriesItems;
 
-    public SeriesAdapter(Activity activity, List<Series> seriesItems) {
+    public ProcessorSeriesAdapter(Activity activity, List<ProcessorSeries> processorSeriesItems) {
         this.activity = activity;
-        this.seriesItems = seriesItems;
+        this.processorSeriesItems = processorSeriesItems;
     }
 
     @Override
     public int getCount() {
-        return seriesItems.size();
+        return processorSeriesItems.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return seriesItems.get(position);
+        return processorSeriesItems.get(position);
     }
 
     @Override
@@ -50,7 +50,7 @@ public class SeriesAdapter extends BaseAdapter{
         TextView name = (TextView) convertView.findViewById(R.id.textViewListSeriesName);
         TextView desc = (TextView) convertView.findViewById(R.id.textViewListSeriesDesc);
 
-        Series s = seriesItems.get(position);
+        ProcessorSeries s = processorSeriesItems.get(position);
 
         name.setText(s.getName());
         desc.setText(s.getDesc());

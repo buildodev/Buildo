@@ -34,7 +34,9 @@ public class ProcessorListingFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                ProcessorFragment fragment = new ProcessorFragment();
+                getFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment, "processorFragment")
+                        .addToBackStack("processor").commit();
             }
         });
 

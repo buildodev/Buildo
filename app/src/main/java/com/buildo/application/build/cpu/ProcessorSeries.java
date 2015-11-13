@@ -1,14 +1,14 @@
 package com.buildo.application.build.cpu;
 
-public class Series {
+public class ProcessorSeries {
 
     private String name;
     private String desc;
 
-    public Series() {
+    public ProcessorSeries() {
     }
 
-    public Series(String name, String desc) {
+    public ProcessorSeries(String name, String desc) {
 
         this.name = name;
         this.desc = desc;

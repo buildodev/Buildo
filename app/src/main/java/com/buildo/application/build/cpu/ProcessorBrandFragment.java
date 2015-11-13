@@ -3,8 +3,6 @@ package com.buildo.application.build.cpu;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +32,7 @@ public class ProcessorBrandFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                SeriesFragment fragment = new SeriesFragment();
+                ProcessorSeriesFragment fragment = new ProcessorSeriesFragment();
                 Bundle bundle = new Bundle();
                 bundle.putString("brand","intel");
                 fragment.setArguments(bundle);
@@ -47,7 +45,7 @@ public class ProcessorBrandFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                SeriesFragment fragment = new SeriesFragment();
+                ProcessorSeriesFragment fragment = new ProcessorSeriesFragment();
                 Bundle bundle = new Bundle();
                 bundle.putString("brand","amd");
                 fragment.setArguments(bundle);
