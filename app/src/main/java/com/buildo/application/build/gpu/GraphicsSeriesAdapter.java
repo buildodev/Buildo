@@ -1,4 +1,4 @@
-package com.buildo.application.build.cpu;
+package com.buildo.application.build.gpu;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,25 +12,25 @@ import com.buildo.application.R;
 
 import java.util.List;
 
-public class ProcessorSeriesAdapter extends BaseAdapter{
+public class GraphicsSeriesAdapter extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
-    private List<ProcessorSeries> processorSeriesItems;
+    private List<GraphicsSeries> graphicsSeriesItems;
 
-    public ProcessorSeriesAdapter(Activity activity, List<ProcessorSeries> processorSeriesItems) {
+    public GraphicsSeriesAdapter(Activity activity, List<GraphicsSeries> graphicsSeriesItems) {
         this.activity = activity;
-        this.processorSeriesItems = processorSeriesItems;
+        this.graphicsSeriesItems = graphicsSeriesItems;
     }
 
     @Override
     public int getCount() {
-        return processorSeriesItems.size();
+        return graphicsSeriesItems.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return processorSeriesItems.get(position);
+        return graphicsSeriesItems.get(position);
     }
 
     @Override
@@ -45,15 +45,15 @@ public class ProcessorSeriesAdapter extends BaseAdapter{
             inflater = (LayoutInflater) activity
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.row_series_cpu, null);
+            convertView = inflater.inflate(R.layout.row_series_gpu, null);
 
-        TextView name = (TextView) convertView.findViewById(R.id.textViewListCPUSeriesName);
-        TextView desc = (TextView) convertView.findViewById(R.id.textViewListCPUSeriesDesc);
+        TextView name = (TextView) convertView.findViewById(R.id.textViewListGPUSeriesName);
+        TextView desc = (TextView) convertView.findViewById(R.id.textViewListGPUSeriesDesc);
 
-        ProcessorSeries s = processorSeriesItems.get(position);
+        GraphicsSeries g = graphicsSeriesItems.get(position);
 
-        name.setText(s.getName());
-        desc.setText(s.getDesc());
+        name.setText(g.getName());
+        desc.setText(g.getDesc());
 
         return convertView;
     }

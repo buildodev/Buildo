@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.buildo.application.build.cpu.ProcessorActivity;
+import com.buildo.application.build.gpu.GraphicsActivity;
 
 public class RigHomeActivity extends AppCompatActivity {
 
@@ -20,5 +21,9 @@ public class RigHomeActivity extends AppCompatActivity {
 
     public void openProcessorActivity(View view) {
         startActivity(new Intent(RigHomeActivity.this, ProcessorActivity.class));
+    }
+
+    public void openGraphicsActivity(View view) {
+        startActivity(new Intent(RigHomeActivity.this, GraphicsActivity.class));
     }
 }

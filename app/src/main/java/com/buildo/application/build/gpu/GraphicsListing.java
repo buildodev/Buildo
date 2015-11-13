@@ -1,11 +1,10 @@
-package com.buildo.application.build.cpu;
+package com.buildo.application.build.gpu;
 
-public class ProcessorSeries {
+public class GraphicsListing {
 
-    private String name;
-    private String desc;
+    private String name, desc;
 
-    public ProcessorSeries() {
+    public GraphicsListing() {
     }
 
     public String getName() {

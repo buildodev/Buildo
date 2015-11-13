@@ -31,7 +31,8 @@
                 android:id="@+id/buttonRigHomeGPU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Graphics Card"/>
+                android:text="Graphics Card"
+                android:onClick="openGraphicsActivity"/>
 
             <Button
                 android:id="@+id/buttonRigHomeRAM"

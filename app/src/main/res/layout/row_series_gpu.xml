@@ -6,13 +6,13 @@
     android:padding="10dp">
 
     <TextView
-        android:id="@+id/textViewListCPUSeriesName"
+        android:id="@+id/textViewListGPUSeriesName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textViewListCPUSeriesDesc"
+        android:id="@+id/textViewListGPUSeriesDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

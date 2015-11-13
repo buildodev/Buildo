@@ -29,14 +29,24 @@ public class GraphicsBrandFragment extends Fragment {
         btnAMD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                GraphicsSeriesFragment fragment = new GraphicsSeriesFragment();
+                Bundle bundle = new Bundle();
+                bundle.putString("brand","amd");
+                fragment.setArguments(bundle);
+                getFragmentManager().beginTransaction().replace(R.id.relativeLayoutGraphics, fragment, "seriesFragment")
+                        .addToBackStack("series").commit();
             }
         });
 
         btnNVIDIA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                GraphicsSeriesFragment fragment = new GraphicsSeriesFragment();
+                Bundle bundle = new Bundle();
+                bundle.putString("brand","nvidia");
+                fragment.setArguments(bundle);
+                getFragmentManager().beginTransaction().replace(R.id.relativeLayoutGraphics, fragment, "seriesFragment")
+                        .addToBackStack("series").commit();
             }
         });
 

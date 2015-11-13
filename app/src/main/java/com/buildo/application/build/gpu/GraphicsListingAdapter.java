@@ -1,4 +1,4 @@
-package com.buildo.application.build.cpu;
+package com.buildo.application.build.gpu;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,25 +12,25 @@ import com.buildo.application.R;
 
 import java.util.List;
 
-public class ProcessorSeriesAdapter extends BaseAdapter{
+public class GraphicsListingAdapter extends BaseAdapter {
 
     private Activity activity;
     private LayoutInflater inflater;
-    private List<ProcessorSeries> processorSeriesItems;
+    private List<GraphicsListing> graphicsItems;
 
-    public ProcessorSeriesAdapter(Activity activity, List<ProcessorSeries> processorSeriesItems) {
+    public GraphicsListingAdapter(Activity activity, List<GraphicsListing> graphicsItems) {
         this.activity = activity;
-        this.processorSeriesItems = processorSeriesItems;
+        this.graphicsItems = graphicsItems;
     }
 
     @Override
     public int getCount() {
-        return processorSeriesItems.size();
+        return graphicsItems.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return processorSeriesItems.get(position);
+        return graphicsItems.get(position);
     }
 
     @Override
@@ -40,20 +40,18 @@ public class ProcessorSeriesAdapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
         if (inflater == null)
             inflater = (LayoutInflater) activity
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.row_series_cpu, null);
+            convertView = inflater.inflate(R.layout.row_listing_gpu, null);
 
-        TextView name = (TextView) convertView.findViewById(R.id.textViewListCPUSeriesName);
-        TextView desc = (TextView) convertView.findViewById(R.id.textViewListCPUSeriesDesc);
+        TextView txtName = (TextView) convertView.findViewById(R.id.textViewGPUListingName);
+        TextView txtDesc = (TextView) convertView.findViewById(R.id.textViewGPUListingDesc);
 
-        ProcessorSeries s = processorSeriesItems.get(position);
-
-        name.setText(s.getName());
-        desc.setText(s.getDesc());
+        GraphicsListing c = graphicsItems.get(position);
+        txtName.setText(c.getName());
+        txtDesc.setText(c.getDesc());
 
         return convertView;
     }

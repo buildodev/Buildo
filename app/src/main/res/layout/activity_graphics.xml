@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.buildo.application.build.ProcessorActivity">
+    tools:context="com.buildo.application.build.gpu.GraphicsActivity">
 
     <include
         android:id="@+id/toolbar_actionbar"
         layout="@layout/toolbar_actionbar" />
 
     <RelativeLayout
-        android:id="@+id/relativeLayoutProcessor"
+        android:id="@+id/relativeLayoutGraphics"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar_actionbar" />

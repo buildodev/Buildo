@@ -66,12 +66,12 @@ public class ProcessorSeriesFragment extends Fragment {
     private void getDataAMD() {
 
         String names[] = {"fx", "semprom", "opteron", "athlon", "phenom"};
-        String descs[] = {"awesome", "good", "OK", "meh!", "seriously?"};
+        String desc[] = {"awesome", "good", "OK", "meh!", "seriously?"};
 
         for (int i = 0; i < names.length; i++) {
             ProcessorSeries processorSeries = new ProcessorSeries();
             processorSeries.setName(names[i]);
-            processorSeries.setDesc(descs[i]);
+            processorSeries.setDesc(desc[i]);
             processorSeriesList.add(processorSeries);
         }
 
