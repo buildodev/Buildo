@@ -45,7 +45,7 @@ public class ProcessorListingAdapter extends BaseAdapter {
             inflater = (LayoutInflater) activity
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.row_listing_cpu, null);
+            convertView = inflater.inflate(R.layout.row_listing_processor, null);
 
         TextView txtName = (TextView) convertView.findViewById(R.id.textViewCPUListingName);
         TextView txtDesc = (TextView) convertView.findViewById(R.id.textViewCPUListingDesc);

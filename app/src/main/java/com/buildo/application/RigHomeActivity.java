@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.buildo.application.build.cpu.ProcessorActivity;
 import com.buildo.application.build.gpu.GraphicsActivity;
+import com.buildo.application.build.memory.MemoryActivity;
 
 public class RigHomeActivity extends AppCompatActivity {
 
@@ -25,5 +26,9 @@ public class RigHomeActivity extends AppCompatActivity {
 
     public void openGraphicsActivity(View view) {
         startActivity(new Intent(RigHomeActivity.this, GraphicsActivity.class));
+    }
+
+    public void openRamActivity(View view) {
+        startActivity(new Intent(RigHomeActivity.this, MemoryActivity.class));
     }
 }

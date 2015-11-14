@@ -41,4 +41,5 @@ dependencies {
     }
     compile 'com.github.orhanobut:hawk:1.19'
     compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.thomashaertel:multispinner:0.1.1@aar'
 }

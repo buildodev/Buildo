@@ -44,7 +44,7 @@ public class GraphicsListingAdapter extends BaseAdapter {
             inflater = (LayoutInflater) activity
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.row_listing_gpu, null);
+            convertView = inflater.inflate(R.layout.row_listing_graphics, null);
 
         TextView txtName = (TextView) convertView.findViewById(R.id.textViewGPUListingName);
         TextView txtDesc = (TextView) convertView.findViewById(R.id.textViewGPUListingDesc);

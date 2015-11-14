@@ -14,14 +14,14 @@
     <string name="title_activity_graphics">GraphicsActivity</string>
     <string name="title_activity_profile">ProfileActivity</string>
 
-    <array name="components">
+    <string-array name="components">
         <item>CPU</item>
         <item>Graphics Card</item>
         <item>RAM</item>
         <item>Motherboard</item>
         <item>Power Supply Unit</item>
         <item>Cabinet</item>
-    </array>
+    </string-array>
 
     <string name="done">Done</string>
     <string name="cancel">Cancel</string>
@@ -29,6 +29,57 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="ramSpeed">
+        <item>Choose Speed</item>
+        <item>266 MHz</item>
+        <item>333 MHz</item>
+        <item>400 MHz</item>
+        <item>533 MHz</item>
+        <item>667 MHz</item>
+        <item>800 MHz</item>
+        <item>1066 MHz</item>
+        <item>1333 MHz</item>
+        <item>1600 MHz</item>
+        <item>1866 MHz</item>
+        <item>2133 MHz</item>
+        <item>2400 MHz</item>
+        <item>2666 MHz</item>
+        <item>2800 MHz</item>
+        <item>3000 MHz</item>
+        <item>3200 MHz</item>
+        <item>3300 MHz</item>
+        <item>3333 MHz</item>
+        <item>3400 MHz</item>
+        <item>3466 MHz</item>
+    </string-array>
+
+    <string-array name="ramBrand">
+        <item>Corsair</item>
+        <item>G Skill</item>
+        <item>Transcend</item>
+        <item>Kingston</item>
+    </string-array>
+
+    <string-array name="ramStickCount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="ramVoltage">
+        <item>1.2V</item>
+        <item>1.35V</item>
+        <item>1.5V</item>
+        <item>1.8V</item>
+        <item>2.5V</item>
+        <item>2.6V</item>
+    </string-array>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

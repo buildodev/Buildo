@@ -45,7 +45,7 @@ public class ProcessorSeriesAdapter extends BaseAdapter{
             inflater = (LayoutInflater) activity
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.row_series_cpu, null);
+            convertView = inflater.inflate(R.layout.row_series_processor, null);
 
         TextView name = (TextView) convertView.findViewById(R.id.textViewListCPUSeriesName);
         TextView desc = (TextView) convertView.findViewById(R.id.textViewListCPUSeriesDesc);

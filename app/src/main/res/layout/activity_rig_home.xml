@@ -24,57 +24,58 @@
                 android:id="@+id/buttonRigHomeCPU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Processor"
-                android:onClick="openProcessorActivity"/>
+                android:onClick="openProcessorActivity"
+                android:text="Processor" />
 
             <Button
                 android:id="@+id/buttonRigHomeGPU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Graphics Card"
-                android:onClick="openGraphicsActivity"/>
+                android:onClick="openGraphicsActivity"
+                android:text="Graphics Card" />
 
             <Button
                 android:id="@+id/buttonRigHomeRAM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RAM"/>
+                android:onClick="openRamActivity"
+                android:text="RAM" />
 
             <Button
                 android:id="@+id/buttonRigHomeMobo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Motherboard"/>
+                android:text="Motherboard" />
 
             <Button
                 android:id="@+id/buttonRigHomePSU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Power Supply"/>
+                android:text="Power Supply" />
 
             <Button
                 android:id="@+id/buttonRigHomeCabinet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cabinet"/>
+                android:text="Cabinet" />
 
             <Button
                 android:id="@+id/buttonRigHomeCPUCooling"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CPU Cooling"/>
+                android:text="CPU Cooling" />
 
             <Button
                 android:id="@+id/buttonRigHomeCabinetCooling"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cabinet Cooling"/>
+                android:text="Cabinet Cooling" />
 
             <Button
                 android:id="@+id/buttonRigHomeAccessories"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Accessories"/>
+                android:text="Accessories" />
 
         </LinearLayout>
 

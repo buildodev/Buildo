@@ -1,0 +1,166 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:context="com.buildo.application.build.memory.MemoryOptionsFragment">
+
+        <TextView
+            android:id="@+id/textViewRamCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Total Capacity"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRamCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRamCapacity"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextRamCapacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="GB" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewRamSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutRamCapacity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Speed"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerRamSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRamSpeed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:entries="@array/ramSpeed" />
+
+        <TextView
+            android:id="@+id/textViewRamBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerRamSpeed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Brand"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerRamBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRamBrand"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:entries="@array/ramBrand"/>
+
+        <TextView
+            android:id="@+id/textViewRamStickCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerRamBrand"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Stick Count"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerRamStickCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRamStickCount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:entries="@array/ramStickCount" />
+
+        <TextView
+            android:id="@+id/textViewRamStickType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerRamStickCount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Type"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupRamOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRamStickType"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DDR" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DDR2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DDR3" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DDR4" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewRamStickVoltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroupRamOptions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Voltage"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerRamStickVoltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRamStickVoltage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:entries="@array/ramVoltage" />
+
+    </RelativeLayout>
+
+</ScrollView>
