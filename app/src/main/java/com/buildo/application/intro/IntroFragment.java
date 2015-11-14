@@ -1,9 +1,10 @@
 package com.buildo.application.intro;
 
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +15,7 @@ import com.buildo.application.R;
 
 import me.relex.circleindicator.CircleIndicator;
 
-public class IntroFragment extends android.support.v4.app.Fragment {
+public class IntroFragment extends Fragment {
 
     private FragmentManager manager;
     private FragmentTransaction transaction;

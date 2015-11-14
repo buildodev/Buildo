@@ -1,8 +1,8 @@
 package com.buildo.application.intro;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import com.buildo.application.R;
@@ -14,7 +14,7 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
-        FragmentManager manager = getSupportFragmentManager();
+        FragmentManager manager = getFragmentManager();
 
         IntroFragment introFragment = new IntroFragment();
         FragmentTransaction transaction = manager.beginTransaction();

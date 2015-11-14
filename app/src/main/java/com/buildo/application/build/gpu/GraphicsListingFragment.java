@@ -1,8 +1,8 @@
 package com.buildo.application.build.gpu;
 
 
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +27,8 @@ public class GraphicsListingFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_gpu_listing, container, false);
+
+        graphicsList = new ArrayList<>();
 
         ListView listView = (ListView) view.findViewById(R.id.listViewListingGraphics);
         GraphicsListingAdapter adapter = new GraphicsListingAdapter(getActivity(), getData());

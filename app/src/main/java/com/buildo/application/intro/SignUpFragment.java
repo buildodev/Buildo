@@ -1,6 +1,7 @@
 package com.buildo.application.intro;
 
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +14,7 @@ import com.buildo.application.ProfileActivity;
 import com.buildo.application.R;
 
 
-public class SignUpFragment extends android.support.v4.app.Fragment {
+public class SignUpFragment extends Fragment {
 
 
     public SignUpFragment() {
