@@ -16,6 +16,6 @@ public class ProcessorActivity extends AppCompatActivity {
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar_actionbar));
 
         ProcessorBrandFragment fragment = new ProcessorBrandFragment();
-        getFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment,"brandFragment").commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment,"brandFragment").commit();
     }
 }

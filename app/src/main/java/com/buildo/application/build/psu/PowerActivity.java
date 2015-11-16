@@ -16,6 +16,6 @@ public class PowerActivity extends AppCompatActivity {
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar_actionbar));
 
         PowerOptionsFragment fragment = new PowerOptionsFragment();
-        getFragmentManager().beginTransaction().replace(R.id.relativeLayoutPower, fragment, "powerOptionsFragment").commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayoutPower, fragment, "powerOptionsFragment").commit();
     }
 }

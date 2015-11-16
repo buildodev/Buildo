@@ -16,6 +16,6 @@ public class MemoryActivity extends AppCompatActivity {
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar_actionbar));
 
         MemoryOptionsFragment fragment = new MemoryOptionsFragment();
-        getFragmentManager().beginTransaction().replace(R.id.relativeLayoutRam, fragment, "ramOptions").commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayoutRam, fragment, "ramOptions").commit();
     }
 }

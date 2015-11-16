@@ -16,6 +16,6 @@ public class GraphicsActivity extends AppCompatActivity {
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar_actionbar));
 
         GraphicsBrandFragment fragment = new GraphicsBrandFragment();
-        getFragmentManager().beginTransaction().replace(R.id.relativeLayoutGraphics, fragment, "brandFragment").commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.relativeLayoutGraphics, fragment, "brandFragment").commit();
     }
 }

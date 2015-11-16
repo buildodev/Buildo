@@ -1,8 +1,8 @@
 package com.buildo.application.build.cpu;
 
 
-import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +34,7 @@ public class ProcessorBrandFragment extends Fragment {
 
                 ProcessorSeriesFragment fragment = new ProcessorSeriesFragment();
                 Bundle bundle = new Bundle();
-                bundle.putString("brand","intel");
+                bundle.putString("brand", "intel");
                 fragment.setArguments(bundle);
                 getFragmentManager().beginTransaction().replace(R.id.relativeLayoutProcessor, fragment, "seriesFragment")
                         .addToBackStack("series").commit();
